@@ -119,8 +119,9 @@ class MainActivity : AppCompatActivity() {
         adaptador = AdaptadorCustom(alumnos!!, object : ClickListener {
             override fun onclick(vista: View, index: Int) {
                 //CLick listener
-                val intent = Intent(applicationContext, DetalleAlumno::class.java)
-                intent.putExtra("ID", alumnos!!.get(index).id)
+                val intent = Intent(applicationContext, NuevoAlumno::class.java)
+
+                intent.putExtra("ID", alumnos!!.get(index).id.toString())
                 startActivity(intent)
             }
         }, object : LongClickListener {

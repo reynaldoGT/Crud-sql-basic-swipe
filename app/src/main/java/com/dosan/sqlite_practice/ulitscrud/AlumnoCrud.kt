@@ -84,7 +84,7 @@ class AlumnoCrud(context: Context) {
         var columnas = arrayOf(
             AlumnoContract.Companion.Entrada.COLUMNA_ID,
             AlumnoContract.Companion.Entrada.COLUMNA_NOMBRE,
-            AlumnoContract.Companion.Entrada.COLUMNA_TIPO,
+            AlumnoContract.Companion.Entrada.COLUMNA_EDAD,
             AlumnoContract.Companion.Entrada.COLUMNA_TIPO,
             AlumnoContract.Companion.Entrada.COLUMNA_MAYOREDAD
         )
